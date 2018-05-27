@@ -38,7 +38,7 @@
                                             <action selector="ajouterEntrepriseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ie-4W-5um"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WON-28-e77">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WON-28-e77" customClass="ImageArrondie" customModule="RepertoireEntreprise" customModuleProvider="target">
                                         <rect key="frame" x="97" y="206" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="KBW-tu-SSJ"/>
@@ -77,7 +77,7 @@
                                             <constraint firstAttribute="height" constant="180" id="gVP-Yd-Hdd"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UL2-26-vZK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UL2-26-vZK" customClass="ButtonArrondi" customModule="RepertoireEntreprise" customModuleProvider="target">
                                         <rect key="frame" x="20" y="616" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="IqA-Nr-OXP"/>

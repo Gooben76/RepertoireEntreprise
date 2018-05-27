@@ -13,6 +13,8 @@
 		1775C21220BAA89200BB8FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1775C21120BAA89200BB8FDA /* Assets.xcassets */; };
 		1775C21520BAA89200BB8FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1775C21320BAA89200BB8FDA /* LaunchScreen.storyboard */; };
 		1775C22120BAAA7700BB8FDA /* AjoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22020BAAA7700BB8FDA /* AjoutController.swift */; };
+		1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */; };
+		1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1775C21420BAA89200BB8FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1775C21620BAA89200BB8FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1775C22020BAAA7700BB8FDA /* AjoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutController.swift; sourceTree = "<group>"; };
+		1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
+		1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		1775C21D20BAA8C100BB8FDA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */,
+				1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1775C21020BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld in Sources */,
+				1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */,
+				1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */,
 				1775C22120BAAA7700BB8FDA /* AjoutController.swift in Sources */,
 				1775C20820BAA89100BB8FDA /* AppDelegate.swift in Sources */,
 			);
