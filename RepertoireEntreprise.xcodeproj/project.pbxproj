@@ -15,6 +15,7 @@
 		1775C22120BAAA7700BB8FDA /* AjoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22020BAAA7700BB8FDA /* AjoutController.swift */; };
 		1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */; };
 		1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */; };
+		1775C22920BAD7C100BB8FDA /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1775C22020BAAA7700BB8FDA /* AjoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutController.swift; sourceTree = "<group>"; };
 		1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
 		1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonArrondi.swift; sourceTree = "<group>"; };
+		1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				1775C22020BAAA7700BB8FDA /* AjoutController.swift */,
+				1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				1775C21020BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld in Sources */,
 				1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */,
+				1775C22920BAD7C100BB8FDA /* PickerViewExtension.swift in Sources */,
 				1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */,
 				1775C22120BAAA7700BB8FDA /* AjoutController.swift in Sources */,
 				1775C20820BAA89100BB8FDA /* AppDelegate.swift in Sources */,

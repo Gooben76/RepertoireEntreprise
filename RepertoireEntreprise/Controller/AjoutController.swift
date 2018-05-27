@@ -22,9 +22,11 @@ class AjoutController: UIViewController {
     @IBOutlet weak var largeurContrainte: NSLayoutConstraint!
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
+    var pickerData = ["Apple", "Big Blue", "Microsoft", "Facebook", "Alphabet"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        miseEnPlacePicker()
     }
 
     override func viewWillAppear(_ animated: Bool) {

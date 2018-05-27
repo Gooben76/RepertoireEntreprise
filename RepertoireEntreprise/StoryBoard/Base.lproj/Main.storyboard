@@ -33,7 +33,10 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pO7-Sz-cOJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Vous ne trouvez pas votre entreprise">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="ajouterEntrepriseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ie-4W-5um"/>
                                         </connections>
@@ -82,7 +85,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="IqA-Nr-OXP"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Ajouter la personne"/>
                                         <connections>
                                             <action selector="ajouterContactAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rc-wd-Pzo"/>
                                         </connections>
