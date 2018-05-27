@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AjoutController: UIViewController {
 
@@ -22,21 +23,54 @@ class AjoutController: UIViewController {
     @IBOutlet weak var largeurContrainte: NSLayoutConstraint!
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
-    var pickerData = ["Apple", "Big Blue", "Microsoft", "Facebook", "Alphabet"]
+    var entreprises = [Entreprise]()
+    var imagePicker :UIImagePickerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        miseEnPlaceImagePicker()
         miseEnPlacePicker()
+        miseEnPlaceTextField()
+        miseEnPlaceNotification()
+        fetchEntreprise()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = UIColor.darkGray
         largeurContrainte.constant = view.frame.width
         scroll.contentSize = CGSize(width: largeurContrainte.constant, height: scroll.frame.height)
     }
     
+    func fetchEntreprise() {
+        let requete : NSFetchRequest<Entreprise> = Entreprise.fetchRequest()
+        let tri = NSSortDescriptor(key: "nom", ascending: true)
+        requete.sortDescriptors = [tri]
+        do {
+            entreprises = try context.fetch(requete)
+            pickerView.reloadAllComponents()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     @IBAction func ajouterEntrepriseAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Votre entreprise n'est pas dans la liste", message: "Ajouter", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "Nom de l'entreprise"
+        }
+        let ajout = UIAlertAction(title: "OK", style: .default) { (act) in
+            let textField = alert.textFields![0] as UITextField
+            if let texte = textField.text, texte != "" {
+                let nouvelleEntreprise = Entreprise(context: context)
+                nouvelleEntreprise.nom = texte
+                appDelegate.saveContext()
+                self.fetchEntreprise()
+            }
+        }
+        let annuler = UIAlertAction(title: "Annuler", style: .default, handler: nil)
+        alert.addAction(ajout)
+        alert.addAction(annuler)
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func ajouterContactAction(_ sender: Any) {

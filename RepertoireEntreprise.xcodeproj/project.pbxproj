@@ -16,6 +16,10 @@
 		1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */; };
 		1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */; };
 		1775C22920BAD7C100BB8FDA /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */; };
+		1775C22C20BAE14300BB8FDA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22B20BAE14300BB8FDA /* File.swift */; };
+		1775C22E20BAF21200BB8FDA /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22D20BAF21200BB8FDA /* ImagePickerExtension.swift */; };
+		1775C23020BB074E00BB8FDA /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C22F20BB074E00BB8FDA /* TextFieldExtension.swift */; };
+		1775C23220BB092400BB8FDA /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C23120BB092400BB8FDA /* NotificationCenterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		1775C22220BABC8B00BB8FDA /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
 		1775C22620BAC18900BB8FDA /* ButtonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonArrondi.swift; sourceTree = "<group>"; };
 		1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
+		1775C22B20BAE14300BB8FDA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		1775C22D20BAF21200BB8FDA /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
+		1775C22F20BB074E00BB8FDA /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		1775C23120BB092400BB8FDA /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		1775C20620BAA89100BB8FDA /* RepertoireEntreprise */ = {
 			isa = PBXGroup;
 			children = (
+				1775C22A20BAE12E00BB8FDA /* Utils */,
 				1775C21E20BAA8D100BB8FDA /* Model */,
 				1775C21D20BAA8C100BB8FDA /* View */,
 				1775C21C20BAA8B300BB8FDA /* Controller */,
@@ -78,6 +87,9 @@
 			children = (
 				1775C22020BAAA7700BB8FDA /* AjoutController.swift */,
 				1775C22820BAD7C100BB8FDA /* PickerViewExtension.swift */,
+				1775C22D20BAF21200BB8FDA /* ImagePickerExtension.swift */,
+				1775C22F20BB074E00BB8FDA /* TextFieldExtension.swift */,
+				1775C23120BB092400BB8FDA /* NotificationCenterExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +118,14 @@
 				1775C21320BAA89200BB8FDA /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		1775C22A20BAE12E00BB8FDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1775C22B20BAE14300BB8FDA /* File.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1775C23020BB074E00BB8FDA /* TextFieldExtension.swift in Sources */,
 				1775C21020BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld in Sources */,
 				1775C22320BABC8B00BB8FDA /* ImageArrondie.swift in Sources */,
+				1775C22C20BAE14300BB8FDA /* File.swift in Sources */,
+				1775C22E20BAF21200BB8FDA /* ImagePickerExtension.swift in Sources */,
+				1775C23220BB092400BB8FDA /* NotificationCenterExtension.swift in Sources */,
 				1775C22920BAD7C100BB8FDA /* PickerViewExtension.swift in Sources */,
 				1775C22720BAC18900BB8FDA /* ButtonArrondi.swift in Sources */,
 				1775C22120BAAA7700BB8FDA /* AjoutController.swift in Sources */,

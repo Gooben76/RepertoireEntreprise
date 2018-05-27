@@ -16,7 +16,7 @@ extension AjoutController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return entreprises.count
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -24,10 +24,11 @@ extension AjoutController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return entreprises[row].nom
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("Vous avez choisi : " + pickerData[row])
+        let nom = entreprises[row].nom ?? ""
+        print("Vous avez choisi : " + nom)
     }
 }
