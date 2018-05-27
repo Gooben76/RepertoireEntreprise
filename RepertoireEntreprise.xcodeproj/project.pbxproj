@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1775C20820BAA89100BB8FDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C20720BAA89100BB8FDA /* AppDelegate.swift */; };
-		1775C20A20BAA89100BB8FDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1775C20920BAA89100BB8FDA /* ViewController.swift */; };
 		1775C20D20BAA89100BB8FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1775C20B20BAA89100BB8FDA /* Main.storyboard */; };
 		1775C21020BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1775C20E20BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld */; };
 		1775C21220BAA89200BB8FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1775C21120BAA89200BB8FDA /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		1775C20420BAA89100BB8FDA /* RepertoireEntreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepertoireEntreprise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1775C20720BAA89100BB8FDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1775C20920BAA89100BB8FDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1775C20C20BAA89100BB8FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1775C20F20BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RepertoireEntreprise.xcdatamodel; sourceTree = "<group>"; };
 		1775C21120BAA89200BB8FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		1775C20620BAA89100BB8FDA /* RepertoireEntreprise */ = {
 			isa = PBXGroup;
 			children = (
+				1775C21E20BAA8D100BB8FDA /* Model */,
+				1775C21D20BAA8C100BB8FDA /* View */,
+				1775C21C20BAA8B300BB8FDA /* Controller */,
+				1775C21F20BAA8DD00BB8FDA /* StoryBoard */,
 				1775C20720BAA89100BB8FDA /* AppDelegate.swift */,
-				1775C20920BAA89100BB8FDA /* ViewController.swift */,
-				1775C20B20BAA89100BB8FDA /* Main.storyboard */,
 				1775C21120BAA89200BB8FDA /* Assets.xcassets */,
-				1775C21320BAA89200BB8FDA /* LaunchScreen.storyboard */,
 				1775C21620BAA89200BB8FDA /* Info.plist */,
-				1775C20E20BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld */,
 			);
 			path = RepertoireEntreprise;
+			sourceTree = "<group>";
+		};
+		1775C21C20BAA8B300BB8FDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1775C21D20BAA8C100BB8FDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1775C21E20BAA8D100BB8FDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1775C20E20BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1775C21F20BAA8DD00BB8FDA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1775C20B20BAA89100BB8FDA /* Main.storyboard */,
+				1775C21320BAA89200BB8FDA /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1775C21020BAA89100BB8FDA /* RepertoireEntreprise.xcdatamodeld in Sources */,
-				1775C20A20BAA89100BB8FDA /* ViewController.swift in Sources */,
 				1775C20820BAA89100BB8FDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
